@@ -1,11 +1,10 @@
-The robotic arm used in AlohaMini is a hybrid assembly based on open-source projects.
+This arm design is based on Lekiwi (base) and SO100 (arm structure).
+We merged and adapted the two projects for the AlohaMini platform.
+Huge thanks to the original creators for their excellent work.
 
-- Arm base (modified):  
-  https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/modified_base_arm.stl
+Original projects:
 
-- Remaining arm components (SO-101 parts):  
-  https://github.com/TheRobotStudio/SO-ARM100/tree/main/STL/SO101
+- Lekiwi: https://github.com/SIGRobotics-UIUC/LeKiwi
 
-This repository only includes mechanical parts that belong to the AlohaMini main body.
 
-Original SO-101 and LeKiwi files are not redistributed here — please download from upstream.
+- SO100: https://github.com/TheRobotStudio/SO-ARM100

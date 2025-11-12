@@ -1,119 +1,89 @@
-# AlohaMini — Open-Source Dual-Arm AI Robot Kit  
+# AlohaMini
 
-**Affordable. Home-buildable. Fully hackable. Costs less than an iPhone.**
+AlohaMini is a dual-arm mobile robot with a motorized vertical lift — beautifully designed, fully 3D-printable, and affordable.  
 
-AlohaMini is an **open-source dual-arm mobile robot** for embodied AI, teleoperation, and robotics research.  
+Built for embodied AI research and real-world manipulation. Assemble at home in ~60 minutes, customize every part, and train or deploy with LeRobot.
 
-Inspired by **ALOHA**, **LeKiwi**, and **Pi-0.5**, it brings real dual-arm manipulation technology to **home labs, makers, and independent researchers** — not just corporations and university labs.
+### What Makes It Different
 
-> **Build and control a real dual-arm robot — at home, for the price of a phone.**
+- **Motorized vertical lift** — 0–60 cm travel (floor-to-table reach)
+- **Purpose-engineered structure** — optimized for real-world tasks
+- **Completely open-source** — hardware and software freely available
+- **LeRobot-compatible** — works out of the box
+- **Clean, modern design** — built for both function and aesthetics
+- **Low-cost & accessible** — engineered so anyone can build a capable robot at home
 
-Unlike many robots with closed APIs and restricted modification, **AlohaMini is fully open**:  
-you can inspect, modify, re-print, and re-program everything. No vendor lock-in. No black boxes.
 
 ## 📸 Gallery
 
 <p align="center">
-  <img src="docs/media/aloha_banner_with_logo.jpg" width="100%"/>
-  <img src="images/aloha_lab.png" width="45%"/>
+  <img src="docs/media/alohamini_banner3.png" width="100%"/>
 </p>
 
 
-## 🧠 Why AlohaMini?
-
-- **Real dual-arm robot (16 DOF)**
-- **Can be built at home** with a consumer 3D printer
-- **Cheaper than one iPhone**
-- Works with **LeRobot** (teleop + imitation learning)
-- Keyboard / voice teleop
-- Replace any part — mechanical, firmware, software, AI model
-- Designed for **learning, research, hacking, and creative robotics**
-
-> A hardware tool for people who love to **build, modify, and understand** robots — not just watch them.
-
----
-
-**AlohaMini flips the table**:
-
-> 🔓 **You own it. You control it. You can change anything.**
-
-Modify freely:
-
-- CAD & structural parts  
-- Motor logic & firmware  
-- Teleoperation interface  
-- AI training pipeline  
-- OS, compute hardware, sensors  
-
-**A robot engineered by makers, for makers.**
-
-Standing on the shoulders of open robotics pioneers — **ALOHA / LeKiwi / Pi-0.5** — and pushing the idea further:
-
-> **Lab-grade robotics → home-buildable, low-cost, fully open.**
-
----
-
 ## ⚙️ Bill of Materials (BOM)
+### Main Components
 
-| Component | Model / Notes | Qty |
-|---|---|---|
-| Servo motors | Feetech STS3215 (12V bus) | 16 |
-| Compute | Raspberry Pi / Linux PC | 1 |
-| Battery | 12V Li-ion pack | 2 |
-| Cameras | USB cameras | 1–5 |
-| Frame | 3D-printed (ABS / PETG / PLA) | — |
-| Lift axis | Lead screw + rail （3D-printed）| — |
-| Mobility | 3 omni wheels | 3 |
+| Component | Model / Notes | Qty | Unit Price (USD) |
+|-----------|---------------|-----|------------------|
+| Servo motors | Feetech STS3215 (12V bus) | 16 | $13.89 |
+| Motor control boards | Waveshare Bus Servo Adapter (A) | 2 | $10.55 |
+| Compute platform | Raspberry Pi 5 (4/8GB) | 1 | $60 |
+| Cameras | 720p USB cameras (2 for arms, 3 for mobile base) | 5 | $20 |
+| Mobility system | Omni wheels | 3 | $36.00 |
+| Battery | 12V Li-ion pack | 2 | $32.99 |
+| Frame | 3D-printed body (ABS / PETG / PLA) | — | ~4kg filament (self-print) |
+| **Total** | — | — | **~$600 (self-print)** |
 
-> All parts are inexpensive, widely available, and **DIY-friendly**.
-> 
----
+Note: 
+- Printable STL files under `/hardware/`
+- Compute platform can be replaced with jetson Nano or similar SBCs if desired.
 
-## 🧠 Software & Teleoperation
+## Quick Start
 
-| Layer | Description |
-|---|---|
-| Framework | **LeRobot compatible** |
-| Teleop | Keyboard / Voice |
-| Learning | ACT / BC imitation learning |
-| Perception | Standard USB cameras |
-| Safety | Motor current + lift axis protection |
-| OS | Linux / Raspberry Pi |
+Start building and running AlohaMini:
 
----
+1. **Hardware acquisition** — purchase all electronic and mechanical components  
+   See **[BOM & Hardware Guide & 3D-Print](docs/BOM.md)**
 
-## 📦 Product Line
+2. **Assembly** — build the robot in ~60 minutes (SO-ARM pre-assembled) 
+   See **[assembly guide](docs/assembly.md)**
 
+3. **Software setup & teleoperation** — install, connect, and control the robot  
+   See **[software guide](docs/software_setup.md)**
+
+
+
+
+
+##  Product Line
 | Model | Build | Rigidity | Target Users |
 |---|---|---|---|
 | **AlohaMini** | Fully 3D-printed | Standard | Education, makers, research labs, home builds |
-| **AlohaMini Pro** | Hybrid **3D-print + metal** | **3×–5× stiffer** | Advanced labs, startups, heavier payloads |
+| **AlohaMini Pro** | Hybrid **3D-print + metal** | **3×–5× stiffer** | Algorithm-focused researchers who need plug-and-play, reliable, and stable hardware — without assembly effort |
+
+> Same URDF & control stack across both versions — only structural materials differ.
 
 ### AlohaMini Pro Access  
-Pro hardware & kits available for research / advanced users.  
+Pro hardware & kits available for advanced users.  
 📩 **Contact to request early access.**
 
-
-## 🧑‍🔧 Team
-AlohaMini is created by:
-
-- **Li Yiteng**
-- **Wu Zhiyong**
-
-## 📬 Contact
-
+## Contact
 Email: liyiteng+github@gmail.com  
-WeChat:liyiteng
-
+WeChat: liyiteng
 Videos & tutorials soon on: Bilibili / YouTube / TikTok
 
----
+## Team
+AlohaMini is created by:  
+**Li Yiteng** / **Wu Zhiyong**
 
-## 🤝 Contribute
+##  Acknowledgements
+Thanks to the open robotics community:  
+**ALOHA · LeKiwi · SO-ARM100 · SO-ARM100-Track-Axis · Pi-0.5 · LeRobot · Hugging Face**
 
-Pull requests, ideas, and forks are welcome.  
-Share your build, your mods, and your experiments.
-
-**Star this repo ⭐ if AlohaMini inspires you!**
-
+## ⭐ Support AlohaMini
+If you like this project:
+- ⭐ Star the repo  
+- 🔔 Follow updates  
+- 💬 Join the community  
 
