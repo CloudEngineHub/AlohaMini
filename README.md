@@ -12,6 +12,7 @@ Use ROS only if you need URDF visualization, RViz inspection, or Gazebo simulati
 
 ## Updates
 
+- [2026-02-26] Update the fine-tuning and deployment guide for Pi 0.5 on Alohamini ('examples/pi0.5_openpi')
 - [2025-12-18] — URDF and simulation assets are now available for visualization and simulation (`simulation/src/Aloha/`)
 - [2025-11-27] STEP (CAD) files are now available (`/hardware/mobile_base/step/`)
 
