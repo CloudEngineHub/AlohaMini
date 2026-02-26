@@ -8,6 +8,10 @@ It introduces modifications based on both the [OpenPI] project and the [lerobot_
 [openpi]: https://github.com/Physical-Intelligence/openpi.git
 [lerobot_alohamini]: https://github.com/liyiteng/lerobot_alohamini.git
 
+Technical Principle — Running Pi-0.5 on AlohaMini (16-DoF version):
+The external control interface exposes a 16-DoF action space (AlohaMini with dual 5-axis arms + grippers).
+Internally, virtual joints are introduced to expand the action space to 18-DoF for compatibility with the OpenPI policy format, and the outputs are finally remapped back to 16-DoF during deployment.
+
 First, add `alohamini_policy.py` to the `policies` folder in the **openpi** project. The specific code is provided in this folder.
 
 Then, add the following modifications to the `/src/openpi/training/config.py` file.
