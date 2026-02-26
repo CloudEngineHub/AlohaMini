@@ -1,9 +1,9 @@
 # Pi-0.5 for Alohamini
 <img src="video\deploy.gif" width="720">
 
-This tutorial is designed for the official OpenPI repository, not the built-in Pi-0.5 implementation provided in LeRobot.
+This tutorial is designed for the official [OpenPI] repository, not the built-in Pi-0.5 implementation provided in LeRobot.
 
-It introduces modifications based on both the OpenPI project and the lerobot_alohamini project to enable fine-tuning training and real-world deployment.
+It introduces modifications based on both the [OpenPI] project and the [lerobot_alohamini] project to enable fine-tuning training and real-world deployment.
 
 [openpi]: https://github.com/Physical-Intelligence/openpi.git
 [lerobot_alohamini]: https://github.com/liyiteng/lerobot_alohamini.git
